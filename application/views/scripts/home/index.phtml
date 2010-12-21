@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Home page view
+ *  
+ * @author Enrico Zimuel (enrico@zimuel.it)
+ * @version 0.2
+ */
+
+$this->placeholder('title')->set('Home page');
+
+if ($this->auth) {
+	echo 'The user is authenticated!';
+} else {
+	echo 'The authentication is disabled';	
+}
+?>
+<br><br>
+<a href="/home/logout"><h3>Logout</h3></a>

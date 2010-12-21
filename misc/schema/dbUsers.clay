@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<clay-model clay-version="1.4.2">
+<database-model alias="" author="" begin-script="" end-script="" name="dbUsers" remarks="" sql-dialect-id="jp.azzurri.clay.dialect.MySQL_5_0_Dialect" uid="a62f5b:11f5a54230b:-7df8" version="1.0">
+<database-model-description></database-model-description>
+<schema-list>
+<schema alias="" name="DEFAULT_SCHEMA" remarks="" uid="a62f5b:11f5a54230b:-7df5">
+<schema-description></schema-description>
+<domain-list/>
+<table-list>
+<table alias="Users" name="users" remarks="users" uid="a62f5b:11f5a54230b:-7df7">
+<table-description></table-description>
+<table-figure-bounds height="127" width="182" x="86" y="70"/>
+<column-list>
+<column alias="Username" auto-increment="false" column-size="32" decimal-digits="0" default-value="" mandatory="true" name="username" remarks="Username" uid="a62f5b:11f5a54230b:-7df1">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="255" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+<variant precision-max="255" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n) BINARY"/>
+</data-type>
+</column>
+<column alias="Password" auto-increment="false" column-size="32" decimal-digits="0" default-value="" mandatory="true" name="password" remarks="Password" uid="a62f5b:11f5a54230b:-7def">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="255" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+<variant precision-max="255" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n) BINARY"/>
+</data-type>
+</column>
+<column alias="Email" auto-increment="false" column-size="80" decimal-digits="0" default-value="" mandatory="false" name="email" remarks="email" uid="a62f5b:11f5a54230b:-7de4">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="255" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+<variant precision-max="255" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n) BINARY"/>
+</data-type>
+</column>
+<column alias="Active" auto-increment="false" column-size="0" decimal-digits="0" default-value="1" mandatory="true" name="active" remarks="" uid="1f46be2:1221654219f:-7fe8">
+<column-description></column-description>
+<data-type jdbc-type="-7" name="BOOLEAN" selected-variant-pattern="BOOLEAN">
+<variant type-name-pattern="BOOLEAN"/>
+</data-type>
+</column>
+<column alias="Last Access" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="last_access" remarks="" uid="1f46be2:1221654219f:-7fe7">
+<column-description></column-description>
+<data-type jdbc-type="93" literal-prefix="'" literal-suffix="'" name="DATETIME" selected-variant-pattern="DATETIME">
+<variant type-name-pattern="DATETIME"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="PK_USERS" remarks="" uid="a62f5b:11f5a54230b:-7df6">
+<primary-key-description></primary-key-description>
+<primary-key-column name="username"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list/>
+</table>
+</table-list>
+</schema>
+</schema-list>
+</database-model>
+</clay-model>

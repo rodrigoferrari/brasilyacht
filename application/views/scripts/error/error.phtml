@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Error view
+ *  
+ * @author Enrico Zimuel (enrico@zimuel.it)
+ * @version 0.2
+ */
+
+$this->placeholder('title')->set($this->title);
+?>
+
+<?php if ($this->message): ?>
+	<p>The following error occurred:</p>
+	<?php echo $this->escape($this->message); ?>
+<?php endif; ?>
